@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1230488039.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 id="head">
+            <span tabindex="0" data-="Your image or text goes here!"
+              >PORTFOLIO</span
+            >
+          </h1>
+          <!-- <img src="./Golden Phoenix.png" class="logo" /> -->
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Front End Developer</p>
+
+          <h1>Hi, Nice to meet you.<br />I am <span>Ankur Nigam</span></h1>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------About Section---------------------------------------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./Folder/photo.png" alt="DP" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              odio aut inventore dolor non ad omnis assumenda rem est nisi
+              cupiditate enim, id obcaecati velit sed nesciunt cumque odit
+              placeat consequatur dicta. Sequi est ullam quod, qui quia nulla
+              perspiciatis, nisi hic tenetur cumque amet assumenda error maxime
+              tempore dolorem!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opnetab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opnetab('project')">Project</p>
+              <p class="tab-links" onclick="opnetab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-End Developer</span><br />Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  <span>Competitive Programmer</span><br />Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  <span>C/C++</span><br />Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit.
+                </li>
+                <li>
+                  <span>Java</span><br />Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="project">
+              <ul>
+                <li>
+                  <span>Typeracer</span><br />Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
+                </li>
+                <li>
+                  <span>Calculator</span><br />Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
+                </li>
+                <li>
+                  <span>Portfolio</span><br />Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>High School</span><br />Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
+                </li>
+                <li>
+                  <span>Senior Secondary School</span><br />Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  <span>College</span><br />Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
+                </li>
+              </ul>
+            </div>
+
+            <button class="resume btn">
+              <a href="./Folder/CV.pdf" download>Download CV</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------Contact me---------------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-at"></i>abc@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>1234567890</p>
+            <div class="social-icon">
+              <p class="socials">Connect with me:-</p>
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://www.linkedin.com" target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="fa-brands fa-instagram-square"></i
+              ></a>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form>
+              <p class="dets">Name:-</p>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <p class="dets">Email:-</p>
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <p class="dets">Message:-</p>
+              <textarea
+                name="message"
+                placeholder="Your message"
+                cols="30"
+                rows="6"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Ankur.All rights reserved.</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
